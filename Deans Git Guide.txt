@@ -1,0 +1,74 @@
+Dean's Git Guide
+
+NOTE: You must use command line for this guide. It's simple and powerful.
+*For commands with explanations see bottom of guide.
+
+
+
+GETTING STARTED
+
+- Go to github.com and sign up for an account
+
+- Then go to either windows.github.com OR mac.github.com and install the relevant Git Application for your OS
+
+- Once you have installed the application. Use the terminal to navigate to the directory where you want to have your clone of the repository.
+
+- Make sure you are where you want to be..
+
+	EXECUTE COMMAND: git clone https://github.com/DCooksey/GroupProject.git
+	
+- This should download the repository to your computer
+
+- Now you should have a GroupProject folder created in that directory if not something has probably gone wrong somewhere... ASK FOR SUPPORT 
+
+- Once the folder has been created you can move or save any file into it.
+
+- Once the file has been saved or successfully moved open up your terminal AND cd into the GroupProject folder (GIT WONT WORK OTHERWISE)..
+
+	EXECUTE COMMAND: git add FILENAME.filetype
+	!!Don't Write FILENAME change it to what your file is called!!
+
+	EXECUTE COMMAND: git status
+	
+	EXECUTE COMMAND: git commit -m "MESSAGE"
+	!!Between the quotations is where you add your message about what your changing or adding. Please be clear and specific. "Updated file" doesn't help anyone!!
+	
+	EXECUTE COMMAND: git push
+	
+- And you're done with uploading a file! 
+
+
+
+
+
+DOWNLOADING CHANGES AND ADDITIONS MADE BY OTHER USERS TO THE REPOSITORY
+
+- Navigate to the GroupProject folder on your computer via the terminal.
+
+	EXECUTE COMMAND: git pull
+	
+- And that's it. You may be notified of changes made and such.
+
+
+
+
+
+COMMANDS
+
+git clone [TAKES THE REPOSITORY ON GITHUB AND CLONES IT TO YOUR COMPUTER. ONLY DO THIS FOR INITIAL SETUP]
+
+git add [ADDS A PARTICULAR FILE TO LATER BE COMMITTED TO THE GITHUB REPOSITORY]
+
+git status [SHOWS THE CHANGES AND UPDATES TO BE MADE]
+
+git commit -m [PREPARES YOUR VERSION ALONG WITH A HELPFUL MESSAGE FOR THE OTHER USERS]
+
+git pull [DOWNLOADS ALL UPDATES TO THE REPOSITORY. USE THIS AT THE BEGINNING OF EVERY USE OF THE GROUPPROJECT FOLDER]
+
+git push [FINAL. ADDS YOUR CHANGES AND FILES TO THE REPOSITY]
+
+ESC:wq [GET OUT OF COMMIT, BEFORE PUSH OBVS]
+
+
+	
+ 
