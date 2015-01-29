@@ -11,6 +11,9 @@ GETTING STARTED
 
 - Then go to either windows.github.com OR mac.github.com and install the relevant Git Application for your OS
 
+- BEFORE YOU CONTINUE POST YOUR USERNAME INTO THE FB GROUP SO THAT I CAN GIVE YOU ACCESS TO THE REPOSITORY.
+YOU WON'T BE ABLE TO UPLOAD OTHERWISE!!
+
 - Once you have installed the application. Use the terminal to navigate to the directory where you want to have your clone of the repository.
 
 - Make sure you are where you want to be..
