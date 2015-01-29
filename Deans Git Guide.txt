@@ -23,7 +23,12 @@ GETTING STARTED
 
 - Once the folder has been created you can move or save any file into it.
 
-- Once the file has been saved or successfully moved open up your terminal AND cd into the GroupProject folder (GIT WONT WORK OTHERWISE)..
+
+
+
+UPLOADING TO THE REPOSITORY
+
+- Once the chosen file has been saved or successfully moved into the GroupProject folder. Open up your terminal AND cd into the GroupProject folder (GIT WONT WORK OTHERWISE)..
 
 	EXECUTE COMMAND: git add FILENAME.filetype
 	!!Don't Write FILENAME change it to what your file is called!!
@@ -35,6 +40,8 @@ GETTING STARTED
 	
 	EXECUTE COMMAND: git push
 	
+- You will probably be prompted for your github user and password
+	
 - And you're done with uploading a file! 
 
 
@@ -42,6 +49,8 @@ GETTING STARTED
 
 
 DOWNLOADING CHANGES AND ADDITIONS MADE BY OTHER USERS TO THE REPOSITORY
+
+!!ALWAYS DO THIS AT THE BEGINNING OF EVERY USE OF THE GROUPPROJECT FOLDER!!
 
 - Navigate to the GroupProject folder on your computer via the terminal.
 
