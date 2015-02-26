@@ -47,15 +47,15 @@
 		<!-- Main Content -->
 		<div class="ui-content">
 			<h2 style="text-align: center">Learn about Goldsmiths the quick and easy way!</h2>
-			<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Ask a question</a>
+			<a href="#ask-question" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Ask a question</a>
 			<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Help your friends!</a>
 		</div>
 		
 		<!-- End Main Content -->
 		
 		<!-- Footer -->
-		<div data-role="footer" data-position="fixed">
-    			<h1>Settings</h1>
+		<div data-role="footer" data-position="fixed" style="text-align: center">
+    			<a href="#" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
 		<!-- End Footer -->
 	  </div>
@@ -66,8 +66,19 @@
 	
 	<!-- Log In -->
 	<div data-role="page" id="log-in">
+		<div data-role="panel" id="my-panel">
+			<ul data-role="listview">
+				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">Log In</a></li>
+  				<li><a href="#">Latest Questions</a></li>
+  				<li><a href="#">My Question</a></li>
+  				<li><a href="#">Settings</a></li>
+  				<li><a href="#">About Us</a></li>
+			</ul>
+		</div>
 		<div data-role="header">
+			<a href="#my-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 			<h1>Log In</h1>
+			<a href="#" data-rel="back" class="ui-btn ui-icon-info ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
 		<div class="ui-content">
 			<form method="get" action="">
@@ -80,6 +91,48 @@
 			<a href="#"><p style="float: right">Forgot Login?</p></a>
 		</div>
 	</div>
+	<!-- End Login -->
+	
+	<!-- Ask a question -->
+	<div data-role="page" id="ask-question">
+		<div data-role="panel" id="my-panel">
+			<ul data-role="listview">
+				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">Log In</a></li>
+  				<li><a href="#">Latest Questions</a></li>
+  				<li><a href="#">My Question</a></li>
+  				<li><a href="#">Settings</a></li>
+  				<li><a href="#">About Us</a></li>
+			</ul>
+		</div>
+		<div data-role="header">
+			<a href="#my-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
+			<h1>Ask a question</h1>
+			<a href="#" data-rel="back" class="ui-btn ui-icon-info ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
+		</div>
+		<div class="ui-content">
+				<div data-role="fieldcontain">
+					<label for="select-choice-1" class="select"></label>
+					<select name="select-choice-1" id="select-choice-1">
+						<option value="general">General</option>
+						<option value="computing">Computing</option>
+						<option value="history">History</option>
+						<option value="food">Food</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<textarea name="textarea" id="textarea-a" placeholder="leave a comment...">Leave a question...</textarea>
+					<form action="" id="post-question">
+						<input type="submit" name="submit" id="submit" value="Post Question" data-mini="true">
+					</form>
+				</div>
+		</div>
+		<div data-role="footer" data-position="fixed" style="text-align: center">
+    			<a href="#" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
+		</div>
+	</div>
+	<!-- End question -->
+	
+	
 	
 </body>
 </html>
