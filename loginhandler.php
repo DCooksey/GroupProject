@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $dbcon = mysqli_connect("igor.gold.ac.uk", "ma202dc", "emigrmnt", "ma202dc_CMS");
+    $dbcon = mysqli_connect("igor.gold.ac.uk", "ma202dc", "emigrmnt", "ma202dc_GroupProject");
 		
 	if($dbcon == FALSE){
 		die("ERROR: Could not connect to database. " . mysqli_connect_error());
