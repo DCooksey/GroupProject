@@ -28,7 +28,7 @@
 		<div data-role="panel" id="my-panel">
 			<ul data-role="listview">
 				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">
-					<?php if(isset($_SESSION['currentUser'])){
+				<?php if(isset($_SESSION['currentUser'])){
 				print 'Log Out';
 				} else {
 					print 'Log In';
@@ -57,7 +57,7 @@
 			<a href="#ask-question" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Ask a question</a>
 			<a href="#help-friends" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Help your friends!</a>
 			<?php if(isset($_SESSION['currentUser'])){
-				echo 'Hello ' .$_SESSION['currentUser'];
+				print '<p style="text-align:center">Hello </p>' .$_SESSION['currentUser'];
 			} ?>
 		</div>
 		
