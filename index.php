@@ -127,7 +127,7 @@
 		<div class="ui-content">
 				<div data-role="fieldcontain">
 					<label for="select-choice-1" class="select"></label>
-					<form action="ask.php" method="post">
+					<form action="ask.php" method="post" data-ajax="false">
 						<select required name="category" id="select-choice-1">
 							<option>Category</option>
 							<option value="general">General</option>
