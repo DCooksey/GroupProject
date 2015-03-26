@@ -127,13 +127,9 @@
 							<option value="history">History</option>
 							<option value="food">Food</option>
 						</select>
-					
-				</div>
-				<div data-role="fieldcontain">
-					<textarea name="textarea" id="textarea-a">Leave a question...</textarea>
-					<form action="" id="post-question">
-						<input type="submit" name="submit" id="submit" value="Post Question" data-mini="true">
-					</form>
+				<textarea name="textarea" id="textarea-a">Leave a question...</textarea>
+				<input type="submit" name="submit" id="submit" value="Post Question" data-mini="true">	
+				</form>	
 				</div>
 			<h3 style="text-align: center">Instant help from your collegues</h3>
 		</div>
