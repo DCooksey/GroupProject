@@ -27,7 +27,7 @@
 		}
 		else {
 			
-			echo '<h2>Error! Please try to post your question again</h2>';
+			print '<h2>Error! Please try to post your question again</h2>';
 			
 		}
 		
