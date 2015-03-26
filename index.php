@@ -119,13 +119,15 @@
 		<div class="ui-content">
 				<div data-role="fieldcontain">
 					<label for="select-choice-1" class="select"></label>
-					<select required name="select-choice-1" id="select-choice-1">
-						<option>Category</option>
-						<option value="general">General</option>
-						<option value="computing">Computing</option>
-						<option value="history">History</option>
-						<option value="food">Food</option>
-					</select>
+					<form action="ask.php" method="post">
+						<select required name="category" id="select-choice-1">
+							<option>Category</option>
+							<option value="general">General</option>
+							<option value="computing">Computing</option>
+							<option value="history">History</option>
+							<option value="food">Food</option>
+						</select>
+					
 				</div>
 				<div data-role="fieldcontain">
 					<textarea name="textarea" id="textarea-a">Leave a question...</textarea>
