@@ -5,9 +5,6 @@
 	if($dbcon == FALSE){
 		die("ERROR: Could not connect to database. " . mysqli_connect_error());
 	}
-	else{
-		echo 'Connection to database established';
-	}
 		
 	$email = $_POST['email'];
 	$password = $_POST['password'];
@@ -17,19 +14,13 @@
 	
 	if(isset($_POST['submitLogin'])){
 		
-		$query = "SELECT Email, Password FROM Login WHERE Username='$email'";
+		$query = "SELECT Email, Password FROM User WHERE Email='$email' AND Password='$password'";
 		
 		$result = mysqli_query($dbcon, $query);
 		
-		$row = mysqli_fetch_row($result);
-		
-		$dbEmail = $row[0];
-		
-		$dbPassword = $row[1];
-		
-		if($email == $dbEmail && $password == $dbPassword){
+		if($result){
 			$_SESSION['currentUser'] = $email;
-			echo "Welcome back " . $_SESSION['currentUser'];
+			header('location: index.php');
 		
 		}
 		else {

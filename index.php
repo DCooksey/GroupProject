@@ -50,6 +50,9 @@
 			<h2 style="text-align: center">Learn about Goldsmiths the quick and easy way!</h2>
 			<a href="#ask-question" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Ask a question</a>
 			<a href="#help-friends" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Help your friends!</a>
+			<?php if(isset($_SESSION['currentUser'])){
+				echo 'Hello ' .$_SESSION['currentUser'];
+			} ?>
 		</div>
 		
 		<!-- End Main Content -->
@@ -82,7 +85,7 @@
 			<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
 		<div class="ui-content">
-			<form action="loginhandler.php" method="post">
+			<form action="loginhandler.php" method="post" data-ajax="false">
 				<label for="email">Email Address:</label>
 				<input type="text" name="email" id="email" placeholder="(e.g cuser001@gold.ac.uk)" />
 				<label for="password">Password:</label>
