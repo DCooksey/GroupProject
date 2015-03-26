@@ -16,7 +16,7 @@
 	
 	if(isset($_POST['submitQuestion'])){
 		
-		$query = "INSERT INTO Question (Username, Category, Body) VALUES ('$user', '$category', '$body')";
+		$query = "INSERT INTO Question (Username, Q_Category, Q_Body) VALUES ('$user', '$category', '$body')";
 		
 		$result = mysqli_query($dbcon, $query);
 		
