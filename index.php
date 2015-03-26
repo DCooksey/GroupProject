@@ -135,8 +135,8 @@
 							<option value="history">History</option>
 							<option value="food">Food</option>
 						</select>
-				<textarea name="textarea" id="textarea-a">Leave a question...</textarea>
-				<input type="submit" name="submit" id="submit" value="Post Question" data-mini="true">	
+				<textarea name="body" id="textarea-a">Leave a question...</textarea>
+				<input type="submit" name="submitQuestion" id="submit" value="Post Question" data-mini="true">	
 				</form>	
 				</div>
 			<h3 style="text-align: center">Instant help from your collegues</h3>
