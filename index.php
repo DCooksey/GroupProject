@@ -59,7 +59,7 @@
 			<a href="#ask-question" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Ask a question</a>
 			<a href="#help-friends" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Help your friends!</a>
 			<?php if(isset($_SESSION['currentUser'])){
-				print '<p style="text-align:center">Hello </p>' .$_SESSION['currentUser'];
+				print '<p style="text-align:center">Hello ' . $_SESSION['currentUser'] . '</p>';
 			} ?>
 		</div>
 		
