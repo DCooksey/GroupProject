@@ -11,7 +11,7 @@
 	$body = $_POST['body'];
 	
 	$user = mysqli_real_escape_string($dbcon, $user);
-	$password = mysqli_real_escape_string($dbcon, $category);
+	$category = mysqli_real_escape_string($dbcon, $category);
 	$body = mysqli_real_escape_string($dbcon, $body);
 	
 	if(isset($_POST['submitQuestion'])){
