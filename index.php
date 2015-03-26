@@ -27,7 +27,13 @@
 		<!-- Panel -->
 		<div data-role="panel" id="my-panel">
 			<ul data-role="listview">
-				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">Log In</a></li>
+				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">
+					<?php if(isset($_SESSION['currentUser'])){
+				print 'Log Out';
+				} else {
+					print 'Log In';
+				}?>
+				</a></li>
   				<li><a href="#">Latest Questions</a></li>
   				<li><a href="#">My Question</a></li>
   				<li><a href="#">Settings</a></li>
