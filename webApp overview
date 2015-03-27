@@ -1,0 +1,26 @@
+Mobile Web Application Overview
+
+This application will aim to help the vast network of Goldsmiths students interact with each other with the goal of helping their peers. The app will allow students to ask questions relating to the uni, and have them answered by their fellow peers. It will serve as quick one stop solution for all uni related issues. People from different courses will be more likely to interact with each other. The mobile application will tap into the knowledge of the various types of goldsmiths students who will help to answer these questions. This tool will be primarily used for learning and discovering new things about the university/area. 
+
+Users will need to sign up and login using their university email and password. They can then ask a question and have it filtered by course.
+
+Example
+
+“John has just joined the university studying Bsc Politics and would like to know what the food in the canteen is like? He will post this question and place it in the General category.”
+
+“Mary studies Bsc Computer Science and is wondering whether it is better to use wamp or xammp when setting up a web development environment? She posts this question and places it in the Computing category”
+
+“Jacob studies Bsc History and asks: Should I apply for a  work placement after my second year? He posts the question in the General, History and Career categories.”
+
+
+Users will be notified when their question has been answered. Users answering questions will be able to leave a comment as well as vote on questions based on how good they are. This will mean that the most popular questions will moved to the “front of the queue”. They can also search for questions by category. 
+
+Example
+
+“Jessie who studies Bsc Creative Computing logs in to the application and filters her search for questions just in the Computing category. She see’s the question: Is Netbeans a good IDE to use for Java development? She leaves the following comment: Yes it’s great, I have been using it for all of my projects! She gives it a thumbs up and looks at the next question.”
+
+“Billy studying Bsc Art logs into the application and straight away sees the following question: Any good restaurants in New Cross? Billy leaves the following comment: “There are only a few, try the Coopers Arms just opposite New Cross station” he gives it thumbs up and views the next question.”
+
+“Katie who studies music logs in and searches for questions in the Music category. She asks the following question: “Is it alright for me to get a singer for the band outside the uni?” She leaves the following comment: “Ideally not, you will be marked down heavily” She gives the question a thumbs down and checks the general category for questions.”
+
+Users can view their statistics by clicking on their profile. Here they will be able to view the questions they have asked, how many votes the question has, who those votes are from, the comments on the question etc. They can also view which questions they have answered, replies to their comments, people who favorited their comments etc.
