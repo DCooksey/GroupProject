@@ -201,8 +201,5 @@
     			<a href="#settings" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
 	</div>
-	
-	
-	
 </body>
 </html>
