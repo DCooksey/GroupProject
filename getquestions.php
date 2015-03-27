@@ -9,7 +9,7 @@
 	
     try {
      	
-		$query = "SELECT * FROM Question";
+		$query = "SELECT * FROM Question order by q_id DESC";
 	
         $result = mysqli_query($dbcon, $query) or die(mysqli_error($dbcon));
 		
