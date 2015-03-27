@@ -17,10 +17,9 @@
 	if(isset($_POST['submitQuestion'])){
 		
 		$query = "INSERT INTO Question (Username, Q_Category, Q_Body) VALUES ('$user', '$category', '$body')";
+	
 		
-		$result = mysqli_query($dbcon, $query);
-		
-		if($result){
+		if(mysqli_query($dbcon, $query)){
 	
 			header('location: index.php');
 		

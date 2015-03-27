@@ -10,8 +10,12 @@
     try {
      	
 
+<<<<<<< HEAD
 		$query = "SELECT * FROM Question ORDER BY Q_ID DESC";
 
+=======
+		$query = "SELECT * FROM Question ORDER BY Q_id DESC";
+>>>>>>> f15da2b1c7f84e2698220ca1fe981628a8639fd0
 	
         $result = mysqli_query($dbcon, $query) or die(mysqli_error($dbcon));
 		

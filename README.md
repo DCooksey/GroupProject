@@ -1,12 +1,12 @@
-This is our repository for the project. For git commands along with their explanations please see Dean's Git Guide.
+This is a brief description of how to use this webapp [GoldHub].
 
-All of our work can now be uploaded into one shared place.
+Firstly, please change the screen size of your browser to "320/480" for optimum visual representation of this webapp.
+Once you have done that use this URL 'http://doc.gold.ac.uk/~ma202dc/GroupProject/index.php' to load the webapp.
 
-You can upload any file into this repository. Be it a:
- 
--word doc 
--image 
--java code (include .java and .class file!)
--ANY project related file.
+Secondly, to access the login page click on the 'MENU' button on the top left corner which gives you four options and the very first one is for logging in. Use the username - 'ma202dc@gold.ac.uk' and password: 'test' to login yourself in the webapp. After you are logged in, the webapp will greet you using the username[ma202dc etc] and let you ask a question with the option of categorizing it as well as letting you help your friends by answering to one of the existing questions.
 
+There is a 'HOME' button on the top right that takes you to the HomePage right away from any other page whenever you click on it.
+And the other button 'MENU' on top left, by clicking over it, lets the menu to hover down and gives you four options 
+[which are not active yet]
 
+If you click on the button 'Help your friends' it takes you to another page where all the existing questions posted earlier are listed and lets your answer to these questions or rate them.
