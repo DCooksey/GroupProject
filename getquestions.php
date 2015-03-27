@@ -10,9 +10,7 @@
     try {
      	
 
-		$query = "SELECT * FROM Question ORDER BY Q_id DESC";
-
-		$query = "SELECT * FROM Question order by Q_id DESC";
+		$query = "SELECT * FROM Question ORDER BY Q_ID DESC";
 
 	
         $result = mysqli_query($dbcon, $query) or die(mysqli_error($dbcon));
@@ -23,7 +21,8 @@
                 echo "<h1>".$row['Q_Body']."</h1>";
                 echo "<h4>".$row['Q_Category']."</h4>";
 				echo "<h5>".$row['Username']."</h5>"; 
-				echo '<form action="" id="answer-question">
+				echo '<form action="viewquestion.php" method="POST" id="answer-question" data-ajax="false">
+					<input type="hidden" name="questionid" value="'.$row['Q_ID'].'"/>
 					<input type="submit" name="viewQuestion" id="submit" value="View" />
 					</form>
 					<hr />';                             
