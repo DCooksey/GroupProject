@@ -101,7 +101,6 @@
 	<!-- End Login -->
 	
 	<!-- Ask a question -->
-	<?php is_loggedin() ?>
 	<div data-role="page" id="ask-question">
 		<div data-role="panel" id="my-panel">
 			<ul data-role="listview">
