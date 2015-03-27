@@ -6,15 +6,12 @@
 		die("ERROR: Could not connect to database. " . mysqli_connect_error());
 	}
 		
-	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$email = mysqli_real_escape_string($dbcon, $_POST['email']);
+	$password = mysqli_real_escape_string($dbcon, $_POST['password']);
 	
 	if($email == ""){
 		echo 'Login Failed!';
 	}
-	
-	$email = mysqli_real_escape_string($dbcon, $email);
-	$password = mysqli_real_escape_string($dbcon, $password);
 	
 	if(isset($_POST['submitLogin'])){
 		
@@ -22,25 +19,15 @@
 		
 		$result = mysqli_query($dbcon, $query);
 		
-		$row = mysqli_fetch_row($result);
-		
-		//$id = $row[0];
-		
-		//$dbEmail= $row[1];
-		
-		//$dbPassword = $row[2];
-		
-		//if($email== $dbEmail && $password == $dbPassword){
-			
-			
+		$row = mysqli_fetch_array($result);
 
-		if($result){
+		if($row['Email'] == $email && $row['Password'] == $password){
 		$_SESSION['currentUser'] = $email;
 		header('location: index.php');
 		
 		}
 		else {
-			echo 'Login Failed!' .$dbEmail.$dbPassword;
+			echo 'Login Failed!';
 			
 		}
 		
