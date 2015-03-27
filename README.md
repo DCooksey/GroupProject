@@ -8,3 +8,5 @@ Secondly, to access the login page click on the 'MENU' button on the top left co
 There is a 'HOME' button on the top right that takes you to the HomePage right away from any other page whenever you click on it.
 And the other button 'MENU' on top left, by clicking over it, lets the menu to hover down and gives you four options 
 [which are not active yet]
+
+If you click on the button 'Help your friends' it takes you to another page where all the existing questions posted earlier are listed and lets your answer to these questions or rate them.
