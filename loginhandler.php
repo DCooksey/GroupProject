@@ -67,7 +67,5 @@
 		mysqli_close($dbcon);
 	}
 		
-		
-
 ?>
 >>>>>>> 1c11a6cbf5db41bce8bf62dd304e8fa96e23a6e9
