@@ -9,11 +9,11 @@
 	
     try {
      	
-<<<<<<< HEAD
+
 		$query = "SELECT * FROM Question ORDER BY Q_id DESC";
-=======
+
 		$query = "SELECT * FROM Question order by Q_id DESC";
->>>>>>> origin/master
+
 	
         $result = mysqli_query($dbcon, $query) or die(mysqli_error($dbcon));
 		
