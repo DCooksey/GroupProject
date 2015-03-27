@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
+<?php include 'includes/functions.php' ?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -28,11 +28,7 @@
 		<div data-role="panel" id="my-panel">
 			<ul data-role="listview">
 				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">
-					<?php if(isset($_SESSION['currentUser'])){
-					print 'Log Out';
-				} else {
-					print 'Log In';
-				}?></a></li>
+				<?php is_loggedin() ?></a></li>
   				<li><a href="#">Latest Questions</a></li>
   				<li><a href="#">My Question</a></li>
   				<li><a href="#">Settings</a></li>
@@ -201,8 +197,5 @@
     			<a href="#settings" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
 	</div>
-	
-	
-	
 </body>
 </html>
