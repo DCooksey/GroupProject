@@ -1,0 +1,53 @@
+GoldHub
+​
+goldsmiths’ q&a webapp
+​
+​
+Group CS4:Conor Okus, Ned Dunningham, Dean Cooksey, Kazi Didar
+
+
+Project Recap:
+Online learning tool that would help Goldsmiths students improve Java skills
+Streamlined environment for revising course material
+Website that offers users various test and walkthrough practices
+
+[Ned: original idea was an online learning tool that would be a series of tests on the modules we had covered. It was to promote peer to peer learning as a core concept. We could not find a way to implement this past what learn.gold was alredy offering with the forums. Also we don’t really use the forums. We decided to redesign our web app keeping the core concept of student interaction and learning from these interactions.
+promoting peer-peer learning;
+Learn.gold similar, students do not really use the forums
+We want student interaction]
+
+Changes to Project:
+Current focus is on improving interaction between Goldsmiths students
+Learn from and help your peers
+Tap into knowledge of various types of goldsmiths student
+Quick one stop solution for all uni related issues
+
+[Dean: crowdsource knowledge; social interaction helping all kinds of students with all of their queries; no social bias
+ask and answer questions on a variety of different topics related to uni from studies to social !!
+optimize to look best on mobile devices, as well as on personal computers
+maybe its gonna bring interaction between more students]
+
+
+Research Practises:
+Utilised POP to create an interactive paper-prototype to allow demonstration of our app
+Open-ended questions to users to gauge thoughts and feelings
+Advanced the project from the findings
+
+[Conor: initially to get ideas and feedback we used POP as a paper mockup;
+8 key features asked to the users to rank]
+
+Changes to Requirements:
+Ask categorised questions.
+Receive Push notifications.
+Ability for user to rate questions, either good or bad.
+Having access to archived questions and answers.
+
+[kazi: based on our research , we found most of our users prefer having questions to be categorized.
+receive notifications through emails;
+users can rate questions as well as answers/comments to push the best one on top; also filter the best answers out of all the rubbish
+you might wanna see the the questions you asked or find out an important question
+Beyond these requirements, we are always asking our users]
+
+​
+facebook plugin
+using uni credentials to already gain information on the users
