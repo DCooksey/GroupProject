@@ -12,3 +12,5 @@ And the other button 'MENU' on top left, by clicking over it, lets the menu to h
 If you click on the button 'Help your friends' it takes you to another page where all the existing questions posted earlier are listed and lets your answer to these questions or rate them.
 
 We still need to write scripts for the panel buttons in the 'MENU' section; also for the 'SETTINGS" button which is at the bottom of the page in middle. Clicking on the 'SETTINGS' button does take you to another page though, letting you choose between two options of allowing the notification sound & push notification.
+
+Furthermore, we are still in the process of writing the script for 'View post'
