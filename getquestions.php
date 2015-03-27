@@ -9,7 +9,7 @@
 	
     try {
      	
-		$query = "SELECT * FROM Question";
+		$query = "SELECT * FROM Question ORDER BY Q_id DESC";
 	
         $result = mysqli_query($dbcon, $query) or die(mysqli_error($dbcon));
 		
@@ -18,15 +18,16 @@
             echo '<div>';
                 echo "<h1>".$row['Q_Body']."</h1>";
                 echo "<h4>".$row['Q_Category']."</h4>";
-				echo "<h5>".$row['Username']."</h5>";                               
+				echo "<h5>".$row['Username']."</h5>"; 
+				echo '<form action="" id="answer-question">
+					<input type="submit" name="viewQuestion" id="submit" value="View" />
+					</form>
+					<hr />';                             
            echo "</div>";
-			
-			 
-  
 
         }
 	}	catch(PDOException $e) {
-        echo $e->getMessage();
+        // echo $e->getMessage();
     }
 	mysqli_close($dbcon);
    

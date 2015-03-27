@@ -51,7 +51,7 @@
 			<a href="#ask-question" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Ask a question</a>
 			<a href="#help-friends" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Help your friends!</a>
 			<?php if(isset($_SESSION['currentUser'])){
-				print '<p style="text-align:center">Hello ' . $_SESSION['currentUser'] . '</p>';
+				print '<br /><p style="text-align:center">Hello ' . $_SESSION['currentUser'] . '</p>';
 			} ?>
 		</div>
 		
@@ -157,21 +157,21 @@
 			<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
 		<div class="ui-content">
-			<!-- <h3 style="text-align: center"> --><?php include 'getquestions.php';?><!-- </h3> -->
-			<!-- <div data-role="fieldcontain">
+			<?php include 'getquestions.php';?>
+			 <div data-role="fieldcontain">
+			 		<form action="" id="answer-question">
 					<textarea name="textarea" id="answer-question">Leave a comment...</textarea>
-					<!-- <form action="" id="answer-question">
-						
-					</form> -->
-			<!-- </div> --> -->
+					<input type="submit" name="submitComment" id="submit" value="Answer" />
+					</form> 
+			</div> 
 			<!-- <div style="text-align: center" data-role="controlgroup" data-type="horizontal">
 			<h6>Rate this question?</h6>
 			<a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 			<a href="#" class="ui-btn ui-icon-arrow-d ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
-		</div>
 		</div> -->
+		</div>
 	</div>
-	<!-- End Help Freinds -->
+	<!-- End Help Friends -->
 	
 	<!-- Settings -->
 	<div data-role="page" id="settings">
