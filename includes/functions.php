@@ -7,10 +7,20 @@
 		session_start();
 	// Check for the session
 	if (isset($_SESSION['currentUser'])) {
-		print 'Log Out';
+		
+		print '<a href="logout.php" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon" data-ajax="false">Log Out</a></li>';
 	} else {
-		print 'Log In';
+		print '<a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon" data-ajax="false">Log In</a></li>';
 	}
 
 } 
+	
+	function end_session() {
+		session_start();
+		if(isset($_SESSION['currentUser'])) {
+			print "logout.php";
+		} else {
+			print "#log-in";
+		}
+	}
 ?>

@@ -27,8 +27,7 @@
 		<!-- Panel -->
 		<div data-role="panel" id="my-panel">
 			<ul data-role="listview">
-				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">
-				<?php is_loggedin() ?></a></li>
+				<li data-role="list-divider"><?php is_loggedin() ?>
   				<li><a href="#">Latest Questions</a></li>
   				<li><a href="#">My Question</a></li>
   				<li><a href="#">Settings</a></li>
@@ -102,10 +101,11 @@
 	<!-- End Login -->
 	
 	<!-- Ask a question -->
+	<?php is_loggedin() ?>
 	<div data-role="page" id="ask-question">
 		<div data-role="panel" id="my-panel">
 			<ul data-role="listview">
-				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">Log In</a></li>
+				<li data-role="list-divider"><a href= class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">Log In</a></li>
   				<li><a href="#">Latest Questions</a></li>
   				<li><a href="#">My Question</a></li>
   				<li><a href="#">Settings</a></li>
@@ -157,19 +157,19 @@
 			<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
 		<div class="ui-content">
-			<h3 style="text-align: center">Should I use wamp for web development?</h3>
-			<div data-role="fieldcontain">
+			<!-- <h3 style="text-align: center"> --><?php include 'getquestions.php';?><!-- </h3> -->
+			<!-- <div data-role="fieldcontain">
 					<textarea name="textarea" id="answer-question">Leave a comment...</textarea>
 					<!-- <form action="" id="answer-question">
 						
 					</form> -->
-			</div>
-			<div style="text-align: center" data-role="controlgroup" data-type="horizontal">
+			<!-- </div> --> -->
+			<!-- <div style="text-align: center" data-role="controlgroup" data-type="horizontal">
 			<h6>Rate this question?</h6>
 			<a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 			<a href="#" class="ui-btn ui-icon-arrow-d ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- End Help Freinds -->
 	
