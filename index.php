@@ -28,14 +28,12 @@
 		<!-- Panel -->
 		<div data-role="panel" id="my-panel">
 			<ul data-role="listview">
-				<?php if(isset($_SESSION['currentUser'])){
-					print '<li data-role="list-divider"><a href="logout.php" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">';
+				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">
+					<?php if(isset($_SESSION['currentUser'])){
 					print 'Log Out';
 				} else {
-					print '<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">';
 					print 'Log In';
-				}?>
-				</a></li>
+				}?></a></li>
   				<li><a href="#">Latest Questions</a></li>
   				<li><a href="#">My Question</a></li>
   				<li><a href="#">Settings</a></li>
