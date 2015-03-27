@@ -30,6 +30,4 @@
 		mysqli_close($dbcon);
 	}
 		
-		
-
 ?>
