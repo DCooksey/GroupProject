@@ -158,12 +158,6 @@
 		</div>
 		<div class="ui-content">
 			<?php include 'getquestions.php';?>
-			 <div data-role="fieldcontain">
-			 		<form action="" id="answer-question">
-					<textarea name="textarea" id="answer-question">Leave a comment...</textarea>
-					<input type="submit" name="submitComment" id="submit" value="Answer" />
-					</form> 
-			</div> 
 			<!-- <div style="text-align: center" data-role="controlgroup" data-type="horizontal">
 			<h6>Rate this question?</h6>
 			<a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
