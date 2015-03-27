@@ -29,8 +29,8 @@
 		<div data-role="panel" id="my-panel">
 			<ul data-role="listview">
 				<?php if(isset($_SESSION['currentUser'])){
-				print 'Log Out';
-				print '<li data-role="list-divider"><a href="logout.php" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">';
+					print '<li data-role="list-divider"><a href="logout.php" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">';
+					print 'Log Out';
 				} else {
 					print '<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">';
 					print 'Log In';
