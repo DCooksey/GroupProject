@@ -116,23 +116,7 @@
 			<h1>Ask a question</h1>
 			<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
-		<div class="ui-content">
-				<div data-role="fieldcontain">
-					<label for="select-choice-1" class="select"></label>
-					<form action="ask.php" method="post" data-ajax="false">
-						<select required name="category" id="select-choice-1">
-							<option>Category</option>
-							<option value="general">General</option>
-							<option value="computing">Computing</option>
-							<option value="history">History</option>
-							<option value="food">Food</option>
-						</select>
-				<textarea name="body" id="textarea-a">Leave a question...</textarea>
-				<input type="submit" name="submitQuestion" id="submit" value="Post Question" data-mini="true">	
-				</form>	
-				</div>
-			<h3 style="text-align: center">Instant help from your collegues</h3>
-		</div>
+		<?php create_form(); ?>
 		<div data-role="footer" data-position="fixed" style="text-align: center">
     			<a href="#settings" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
