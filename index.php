@@ -150,6 +150,33 @@
 	</div>
 	<!-- End Help Friends -->
 	
+	<!-- Single Question -->
+	<div data-role="page" id="single-question">
+		<div data-role="panel" id="my-panel">
+			<ul data-role="listview">
+				<li data-role="list-divider"><a href="#log-in" class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon">Log In</a></li>
+  				<li><a href="#">Latest Questions</a></li>
+  				<li><a href="#">My Question</a></li>
+  				<li><a href="#">Settings</a></li>
+  				<li><a href="#">About Us</a></li>
+			</ul>
+		</div>
+		<div data-role="header">
+			<a href="#my-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
+			<h1>Help out!</h1>
+			<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
+		</div>
+		<div class="ui-content">
+			<!-- // <?php include viewquestion.php ?> -->
+			<div style="text-align: center" data-role="controlgroup" data-type="horizontal">
+			<h6>Rate this question?</h6>
+			<a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
+			<a href="#" class="ui-btn ui-icon-arrow-d ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
+		</div>
+		</div>
+	</div>
+	<!-- End Single Question -->
+	
 	<!-- Settings -->
 	<div data-role="page" id="settings">
 		<div data-role="panel" id="my-panel">
