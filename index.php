@@ -141,11 +141,6 @@
 		</div>
 		<div class="ui-content">
 			<?php include 'getquestions.php';?>
-			<!-- <div style="text-align: center" data-role="controlgroup" data-type="horizontal">
-			<h6>Rate this question?</h6>
-			<a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
-			<a href="#" class="ui-btn ui-icon-arrow-d ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
-		</div> -->
 		</div>
 	</div>
 	<!-- End Help Friends -->
@@ -167,7 +162,7 @@
 			<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
 		</div>
 		<div class="ui-content">
-			<!-- // <?php include viewquestion.php ?> -->
+		    <!-- Single question goes here? -->
 			<div style="text-align: center" data-role="controlgroup" data-type="horizontal">
 			<h6>Rate this question?</h6>
 			<a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-notext ui-nodisc-icon ui-corner-all" ></a>
