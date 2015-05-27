@@ -10,9 +10,6 @@
 // $user->last_name = "Didar";
 // $user->save(); 
 
-$post = new Post();
-$content = "Hello";
-$post->add_post($content);
 
 
 ?>

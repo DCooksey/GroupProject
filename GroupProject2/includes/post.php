@@ -6,12 +6,34 @@
     class Post {
     	
 		protected static $table_name = "goldhub_post";
-		protected static $db_fields = array('post_id','post_author','post_date','post_content');
+		protected static $db_fields = array('post_id','user_id','category_id','post_content','post_date');
 		public $post_id;
-		public $post_author;
-		public $post_date;
+		public $user_id;
+		public $category_id;
 		public $post_content;
+		public $post_date;
 		
+		public $errors = array();
+		
+		// From $_POST['the post];
+		public function add_post($post) {
+			if(!$post || empty($post) || !is_array($post)) {
+				$this->errors[] = "You didn't post anything";
+				return false;
+			} else {
+				$this->post_content = $post;
+				return true;
+			}
+		}
+		
+		//Overide
+		public function save() {
+			if(isset($this->post_id)) {
+				$this->update();
+			} else {
+				$this->create();
+				}
+			}
 		
 		public static function find_all() {
 			return self::find_by_sql("SELECT * FROM ".self::$table_name."");
@@ -83,9 +105,9 @@
 			return $clean_attributes;
 		}
 		
-		public function save() {
-			return (isset($this->user_id) ? $this->update() : $this->create());
-		}
+		// public function save() {
+			// return (isset($this->user_id) ? $this->update() : $this->create());
+		// }
 		
 		public function create(){
 			global $database;
@@ -121,7 +143,7 @@
 		
 		public function delete(){
 			global $database;
-			$sql = "DELETE FROM ".self::$table_name." WHERE user_id='$this->user_id' LIMIT 1";
+			$sql = "DELETE FROM ".self::$table_name." WHERE user_id='$this->user_id'";
 			$database->query($sql);
 			return ($database->affected_rows() == 1) ? true : false;
 		}
